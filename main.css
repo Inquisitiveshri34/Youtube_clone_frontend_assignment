@@ -38,7 +38,7 @@ nav{
     background-color: rgb(65, 65, 65);
 }
 
-header, .filter-opts{
+header{
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,16 @@ header, .filter-opts{
     border-bottom-style: solid;
     border-bottom-color: rgb(60, 60, 60);
     border-bottom-width: 1px;
+}
+
+.filter-opts{
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(60, 60, 60);
+    border-bottom-width: 1px;
+
 }
 
 .filter-opts span{
@@ -57,6 +67,7 @@ header, .filter-opts{
     border-style: solid;
     border-radius: 20px;
     background-color: rgb(60, 60,60);
+    overflow: hidden;
 }
 
 header div{
