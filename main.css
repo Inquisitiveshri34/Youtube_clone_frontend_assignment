@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    color:white;
+    margin:0;
+    font-family: 'Roboto',sans-serif;
+    display:flex;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(275px,1fr));
+    grid-template-rows: 100px auto;
+    justify-items: center;
+    width: 80vw;
+}
+
+nav{
+    position:sticky;
+    left:0;
+    top:0;
+    line-height: 1.5;
+    width: 200px;
+    background-color: rgb(35, 35, 35);
+}
+.opts{
+    padding: 15px 8px;
+    font-size: 14px;
+}
+
+.opts div{
+    display:grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: minmax(35px,auto);
+    align-items: center;
+}
+
+.opts div:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+header, .filter-opts{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(60, 60, 60);
+    border-bottom-width: 1px;
+}
+
+.filter-opts span{
+    margin: 10px;
+    margin-inline: 5px;
+    padding: 10px;
+    border-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(60, 60,60);
+}
+
+header div{
+    display: flex;
+    justify-self: right;
+    align-items: center;
+}
+
+header input{
+    height:30px;
+    width: 40vw;
+    margin-left: 40px;
+    border-color: rgb(60, 60, 60);
+    background-color:rgb(60, 60, 60);
+    border-width: 1px;
+}
+
+header input::placeholder{
+    color: lightgrey;
+}
+
+header img{
+    height: 30px;
+}
+
+#searchIcon div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(60, 60, 60);
+    background-color: rgb(60, 60, 60);
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 45px auto;
+    margin: 1px;
+}
+
+.mixname{
+    grid-column: 1/3;
+    font-size: 1rem;
+}
+
+.mixinfo{
+    grid-column:1/3;
+    font-size:0.7rem;
+    color: darkgrey;
+}
+
+.vname{
+    font-size: 1rem;
+}
+
+.vinfo{
+    font-size: 0.7rem;
+    color: darkgrey;
+}
+
+.thumb_Nail img{
+    width:100%;
+}
+
+.thumb_Nail{
+    margin: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.thumb_Nail:hover{
+    border-color: white;
+}
